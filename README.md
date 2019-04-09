@@ -4,18 +4,18 @@
 
 ```js
 const database = require('@mineshop/database')
-import * as database from '@mineshop/database'
-import { db, init } from '@mineshop/database'
+import db from '@mineshop/database'
+import init from '@mineshop/database/init'
 ```
 
-## database.init()
+## init()
 
 ```js
 // Use lowdb so dont need any host/password
-database.init()
+init()
 ```
 
-## database.db
+## db
 
 > Access to lowdb instance
 
