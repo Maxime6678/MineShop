@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@mineshop.com",
+      "password": "pass"
+    }
+  ],
+  "servers": [
+    {
+      "id": 1,
+      "name": "MineShop",
+      "plan": 1,
+      "owner": 1
+    },
+    {
+      "id": 2,
+      "name": "Hello",
+      "plan": 1,
+      "owner": 1
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@mineshop/database",
+  "version": "1.0.0",
+  "description": "MineShop is a free shop website for your Minecraft server !",
+  "main": "lib/index.js",
+  "scripts": {
+    "watch": "SET NODE_ENV=dev && nodemon --ignore db.json -r esm -r dotenv/config lib/index.js",
+    "dev": "SET NODE_ENV=dev && node -r esm -r dotenv/config lib/index.js",
+    "prod": "SET NODE_ENV=prod && node -r esm -r dotenv/config lib/index.js",
+    "start": "node -r esm -r dotenv/config lib/index.js"
+  },
+  "repository": "github:Maxime6678/MineShop",
+  "keywords": [],
+  "author": "Maxime6678 <maxime6678.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^7.0.0",
+    "esm": "^3.2.22",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
