@@ -1,30 +1,59 @@
-# @mineshop/database
+# @mineshop/users
 
 > MineShop is a free shop website for your Minecraft server !
 
 ```js
-const database = require('@mineshop/database')
-import * as database from '@mineshop/database'
-import { db, init } from '@mineshop/database'
+const users = require('@mineshop/users')
+import users from '@mineshop/users'
 ```
 
-## database.init()
+## users.fetchByCredential(username: string, password: string)
+> Get a user data from username and password
 
 ```js
-// Use lowdb so dont need any host/password
-database.init()
+let user = await users.fetchByCredential('', '')
+if (!user) throw new Error
+console.log(user)
 ```
 
-## database.db
+## users.fetchById(id: number)
+> Get a user data from id
 
-> Access to lowdb instance
+```js
+let user = await users.fetchByCredential(1)
+if (!user) throw new Error
+console.log(user)
+```
 
-Refer to [lowdb](https://github.com/typicode/lowdb) for documentation
+## users.fetchServers(id: number)
+> Get all user's servers from user id
+
+```js
+let servers = await users.fetchServers(1)
+if (!servers) throw new Error
+console.log(user)
+```
+
+## users.create(username: string, password: string, email: string)
+> Create a user
+
+```js
+let {status, message} = await users.create('admin', 'password', 'info@mineshop.com')
+if (!status) throw new Error(message)
+```
+
+## users.editEmail(id: number, email: string)
+> Edit a user email from id
+
+```js
+let {status, message} = await users.editEmail(1, 'admin@mineshop.com')
+if (!status) throw new Error(message)
+```
 
 ## Debug
 
 ```sh
-DEBUG="core:db"
+DEBUG="core:users"
 ```
 
 ## License

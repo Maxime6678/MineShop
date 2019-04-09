@@ -1,5 +1,5 @@
 {
-  "name": "@mineshop/database",
+  "name": "@mineshop/users",
   "version": "1.0.0",
   "description": "MineShop is a free shop website for your Minecraft server !",
   "main": "lib/index.js",
@@ -14,10 +14,9 @@
   "author": "Maxime6678 <maxime6678.dev@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@mineshop/database": "git+https://github.com/Maxime6678/MineShop.git#@mineshop/database",
     "debug": "^4.1.1",
-    "dotenv": "^7.0.0",
-    "esm": "^3.2.22",
-    "lowdb": "^1.0.0"
+    "esm": "^3.2.22"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
