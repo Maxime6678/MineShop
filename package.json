@@ -15,10 +15,11 @@
   "license": "MIT",
   "dependencies": {
     "@mineshop/database": "git+https://github.com/Maxime6678/MineShop.git#@mineshop/database",
-    "debug": "^4.1.1",
-    "esm": "^3.2.22"
+    "debug": "^4.1.1"
   },
   "devDependencies": {
+    "dotenv": "^7.0.0",
+    "esm": "^3.2.22",
     "nodemon": "^1.18.10"
   }
 }
